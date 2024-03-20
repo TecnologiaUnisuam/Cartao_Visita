@@ -1,0 +1,133 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Recta-Bold;
+}
+body{
+  background: #0F96AE;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;/* 
+  overflow-x: hidden; */
+}
+a{
+  text-decoration: none;
+}
+
+
+
+.imagem{
+  background: url(Img/Main/10511349.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.conteudo{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.conteudoIcone{
+  display: flex;
+}
+.branco{
+  display: flex;
+  margin: auto;
+  background-color: #ffffff;
+  width: 400px;
+  height: 295px;
+  border-radius: 30px;
+}
+.icone{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  padding: 7px;
+  margin-top: -50px;
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 5px;
+
+}
+
+.conteudoLink{
+  display: grid;
+  margin: -187px 20px 20px 20px;
+}
+
+
+.divLink{
+  display: flex;
+  margin: 7px;
+}
+.link{
+  min-width: 350px;
+  background-color: #EF7D00;
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.link:hover{
+  background-color: #EA5A33;
+}
+.divLinkIcon{
+  margin: auto;
+}
+
+.icon{
+  display: flex;
+}
+.imagemLink{
+  height: 40px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 410px){
+  .branco{
+    width: 320px;
+    padding: 10px;
+  }  
+  .link{
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .branco{
+    height: 320px;
+  }
+  .conteudoLink{
+    margin: -207px 20px 20px 20px;
+  }
+}
+
+@import url(https://db.onlinewebfonts.com/c/b86a36b86f07f668b7ba6b2825d1b093?family=Recta-Bold);
+@font-face {
+  font-family: "Recta-Bold";
+  src: url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.eot");
+  src: url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/b86a36b86f07f668b7ba6b2825d1b093.svg#Recta-Bold")format("svg");
+}
