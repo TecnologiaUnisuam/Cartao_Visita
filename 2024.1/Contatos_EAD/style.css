@@ -66,6 +66,7 @@ h1{
 .conteudoLink{
   display: grid;
   margin: 58.4px 20px 20px 20px;
+  cursor: pointer;
 }
 
 
