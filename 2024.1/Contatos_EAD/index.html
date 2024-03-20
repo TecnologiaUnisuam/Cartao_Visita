@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>UNISUAM - EAD | Contatos Suporte EAD</title>
+
+    <!-- Icons & Fonts -->
+    <link rel="icon"
+        href="https://hotsite.unisuam.edu.br/Documentos_Institucionais/Imagens/PNG/Icon/Unisuam/icon_Coruja_Branca_Circular_Azul_Claro.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/b86a36b86f07f668b7ba6b2825d1b093?family=Recta-Bold">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cores.css">
+</head>
+
+<body>
+
+    <div class="conteudoTitulo">
+        <h1>Contatos Suporte EAD:</h1>
+    </div>
+
+    <div class="conteudo">
+        <div class="descricao">
+            <div class="conteudoLink">
+                <div class="divLink">
+                    <a type="button" href="https://api.whatsapp.com/send?phone=5521983026434" target="_blank" class="link">Whatsapp</a>
+                </div>
+                <div class="divLink">
+                    <p id="btnEmail" class="link">E-mail</p>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Obter o botão de e-mail
+                        var btnEmail = document.getElementById("btnEmail");
+                        
+                        // Adicionar um evento de clique ao botão
+                        btnEmail.addEventListener("click", function() {
+                            // Endereço de e-mail a ser copiado
+                            var email = "suporteonline@unisuam.edu.br";
+                            
+                            // Criar um elemento de texto temporário
+                            var tempInput = document.createElement("input");
+                            tempInput.value = email;
+                            
+                            // Adicionar o elemento de texto temporário ao corpo do documento
+                            document.body.appendChild(tempInput);
+                            
+                            // Selecionar o texto no elemento de texto temporário
+                            tempInput.select();
+                            
+                            // Copiar o texto selecionado para a área de transferência
+                            document.execCommand("copy");
+                            
+                            // Remover o elemento de texto temporário
+                            document.body.removeChild(tempInput);
+                            
+                            // Alerta para indicar que o e-mail foi copiado
+                            alert("E-mail copiado para a área de transferência: " + email + "\n\nPara enviar e-mail e cole no local do destinatário");
+                        });
+                    });
+                </script>
+                <div class="divLink">
+                    <a type="button" href="https://calendar.app.google/xzoHggYstKbiuCNz9" target="_blank" class="link">agenda do meet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
